@@ -1,23 +1,30 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 
+export const getData = createAsyncThunk(
+  'spaceXData/getData',
+  async () => {
+    return fetch('https://api.spacexdata.com/v3/launches').then(res => res.json())
+  }
+)
 
-export const counterSlice = createSlice({
-  name: 'counter',
+export const spaceDataSlice = createSlice({
+  name: 'spaceXData',
   initialState: {
-    count: 0,
+    list: [],
+    status: null,
   },
-  reducers: {
-    increment: (state) => {
-      state.count += 1
+  extraReducers: {
+    [getData.pending]: (state) => {
+      state.status = 'pending'
     },
-    decrement: (state) => {
-      state.count -= 1
+    [getData.fulfilled]: (state, { payload }) => {
+      state.list = payload
+      state.status = 'success'
     },
-    incrementByAmount: (state, action) => {
-      state.count += action.payload
+    [getData.rejected]: (state) => {
+      state.status = 'failed'
     },
   },
 })
-export const { increment, decrement, incrementByAmount } = counterSlice.actions
 
-export default counterSlice.reducer
+export default spaceDataSlice.reducer

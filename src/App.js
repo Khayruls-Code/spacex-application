@@ -1,16 +1,9 @@
-import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
-import { decrement, increment } from './redux/spaceXDataSlice';
-
+import SpaceX from './components/SpaceX/SpaceX';
 function App() {
-  const count = useSelector((state) => state.counter.count)
-  const dispatch = useDispatch()
-
   return (
-    <div>
-      <h1>Counter No:{count} </h1>
-      <button onClick={() => dispatch(increment())}>Increment By 1</button>
-      <button onClick={() => dispatch(decrement())}>Decrement By 1</button>
+    <div className="bg-[url('../src/images/galaxy.jpg')] w-full h-screen fixed overflow-y-scroll py-12">
+      <SpaceX />
     </div>
   );
 }

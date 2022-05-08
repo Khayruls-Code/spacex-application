@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit'
-import counterSlice from './spaceXDataSlice'
+import spaceXDataSlice from './spaceXDataSlice'
 
 export const store = configureStore({
   reducer: {
-    counter: counterSlice,
+    spaceXData: spaceXDataSlice,
   },
 })

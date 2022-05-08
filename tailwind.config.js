@@ -3,7 +3,14 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    colors: {
+      white: '#ffffff',
+      transparent_violet: "rgba(90, 33, 181, 0.9)",
+      transparent_purple: "rgba(89, 28, 135, 0.9)",
+      black: "#000000",
+      red: "#ef4444",
+      green: "#15803d",
+    },
   },
   plugins: [],
 }
