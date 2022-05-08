@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
-import spaceXDataSlice from './spaceXDataSlice'
+import spaceXDataSlice from './features/spaceXDataSlice'
 
 export const store = configureStore({
   reducer: {
