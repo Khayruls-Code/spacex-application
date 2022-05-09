@@ -1,70 +1,41 @@
 # SpaceX App
 
-Project preview Link [SpaceX Dashboard](https://github.com/facebook/create-react-app).
+Project preview Link [SpaceX Dashboard](https://spacex-dashboard-2022.netlify.app/).
 
-## Available Scripts
+## Technologies
 
-In the project directory, you can run:
+React JS, Redux Toolkit, JavaScript, Tailwint CSS
 
-### `npm start`
+## Necessary Install
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `Tailwind CSS`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+I have used Tailwind CSS in this project. I follow the rules of setting up tailwind CSS in react JS. The whole project is styled by tailwind CSS without writing extra CSS.
 
-### `npm test`
+### `eslint`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+"eslint" has been used to create my own linting rules. To set up eslint, eslint, eslint-plugin-eslint-plugin, eslint-plugin-react, babel-eslint have been installed as devDependencies.
 
-### `npm run build`
+### `redux tookit`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I have used the redux toolkit to manage all states of this project. To use the redux toolkit need to install two packages  (1)@reduxjs/toolkit and (2)react-redux
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `moment`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I have used the moment package to filter data by last week, last month, and last year. The moment is a package which helps is parsing, validating, manipulating and displaying date/time in JavaScript in a very easy way.
 
-### `npm run eject`
+### `react icon`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+react icon has been installed to use icons
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `Jest`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+I've used Jest to test the application. We need some other packages to work with Jest. That's why @testing-library/react, jest-dom, and react-test-renderer are installed here.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Deploy Process
 
-## Learn More
+I've deployed the app on netlify. The process is very simple. Firstly, to build the app, have to run "npm run build" command. The build will be finished shortly and there will be created a folder named build in the root directory.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Then, We have to log in on netlify. There has a menu named Sites and have to click on this menu. Here a section is written, "Want to deploy a new site without connecting to Git? Drag and drop your site output folder here". To deploy the application we have to drag and drop the build folder here.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+That's how I deployed the project on netlify.
