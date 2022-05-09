@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# SpaceX App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project preview Link [SpaceX Dashboard](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
