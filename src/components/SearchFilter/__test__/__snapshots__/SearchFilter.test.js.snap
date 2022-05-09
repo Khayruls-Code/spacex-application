@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matchs snapshot 1`] = `
+<div
+  className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mb-4 gap-y-4 gap-x-4 md:gap-x-8"
+  data-testid="searchFilterId"
+>
+  <input
+    className="py-1.5 px-2 outline-none rounded-sm font-semibold w-full"
+    onChange={[Function]}
+    placeholder="Search By Rocket Name..."
+    type="text"
+  />
+  <select
+    className="py-1.5 px-2 outline-none rounded-sm font-semibold w-full"
+    onChange={[Function]}
+  >
+    <option
+      disabled="disabled"
+      selected="true"
+    >
+      Filter By Launch Date
+    </option>
+    <option
+      value="Last Week"
+    >
+      Last Week
+    </option>
+    <option
+      value="Last Month"
+    >
+      Last Month
+    </option>
+    <option
+      value="Last Year"
+    >
+      Last Year
+    </option>
+  </select>
+  <select
+    className="py-1.5 px-2 outline-none rounded-sm font-semibold w-full"
+    onChange={[Function]}
+  >
+    <option
+      disabled="disabled"
+      selected="true"
+    >
+      Filter By Launch Status
+    </option>
+    <option
+      value="Success"
+    >
+      Success
+    </option>
+    <option
+      value="Failure"
+    >
+      Failure
+    </option>
+  </select>
+  <select
+    className="py-1.5 px-2 outline-none rounded-sm font-semibold w-full"
+    onChange={[Function]}
+  >
+    <option
+      disabled="disabled"
+      selected="true"
+    >
+      Upcoming Or Retrospective
+    </option>
+    <option
+      value="Upcoming"
+    >
+      Upcoming
+    </option>
+    <option
+      value="Retrospective"
+    >
+      Retrospective
+    </option>
+  </select>
+</div>
+`;
