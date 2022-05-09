@@ -6,15 +6,18 @@ import store from '../../../redux/store'
 import renderer from 'react-test-renderer'
 
 
-it('render without crashing', () => {
+it('render without crashing',
+() => {
   const div = document.createElement('div')
   ReactDOM.render(
     <Provider store={store}>
       <SearchFilter />
-    </Provider>, div)
+    </Provider>,
+div)
 })
 
-it("matchs snapshot", () => {
+it("matchs snapshot",
+() => {
   const tree = renderer.create(
     <Provider store={store}>
       <SearchFilter />

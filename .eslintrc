@@ -48,8 +48,8 @@
       "always-multiline"
     ],
     "object-shorthand": [
-      0,
-      "never",
+      2,
+      "always",
       {
         "ignoreConstructors": false,
         "avoidQuotes": false // this is the override vs airbnb

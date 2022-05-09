@@ -5,15 +5,18 @@ import { Provider } from 'react-redux'
 import store from '../../../redux/store'
 import renderer from 'react-test-renderer'
 
-it('SpaceX renders without crashing', () => {
+it('SpaceX renders without crashing',
+() => {
   const div = document.createElement('div')
   ReactDOM.render(
     <Provider store={store}>
       <SpaceX />
-    </Provider>, div)
+    </Provider>,
+div)
 })
 
-it("matchs SpaceX snapshot", () => {
+it("matchs SpaceX snapshot",
+() => {
   const tree = renderer.create(
     <Provider store={store}>
       <SpaceX />

@@ -14,7 +14,8 @@ const SearchFilter = ({ setShowSpaceData }) => {
   //dispatch data
   useEffect(() => {
     dispatch(getData())
-  }, [dispatch])
+  },
+    [dispatch])
 
   //getting data search and filterwise
   useEffect(() => {
@@ -30,23 +31,24 @@ const SearchFilter = ({ setShowSpaceData }) => {
     } else {
       setShowSpaceData(spaceXSearchData)
     }
-  }, [spaceXData, searchText])
+  },
+    [spaceXData, searchText])
   return (
     <div data-testid='searchFilterId' className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mb-6 gap-y-4 gap-x-4 md:gap-x-8'>
       <input onChange={(e) => dispatch(handleSearch(e.target.value))} className='py-1.5 px-2 outline-none rounded-sm font-semibold w-full' type="text" placeholder='Search By Rocket Name...' />
       <select onChange={(e) => dispatch(handleDateFilter(e.target.value))} className='py-1.5 px-2 outline-none rounded-sm font-semibold w-full'>
-        <option selected="true" disabled="disabled">Filter By Launch Date</option>
+        <option selected disabled="disabled">Filter By Launch Date</option>
         <option value="Last Week">Last Week</option>
         <option value="Last Month">Last Month</option>
         <option value="Last Year">Last Year</option>
       </select>
       <select onChange={(e) => dispatch(handleStatusFilter(e.target.value))} className='py-1.5 px-2 outline-none rounded-sm font-semibold w-full'>
-        <option selected="true" disabled="disabled">Filter By Launch Status</option>
+        <option selected disabled="disabled">Filter By Launch Status</option>
         <option value="Success">Success</option>
         <option value="Failure">Failure</option>
       </select>
       <select onChange={(e) => dispatch(handleUpcomingFilter(e.target.value))} className='py-1.5 px-2 outline-none rounded-sm font-semibold w-full'>
-        <option selected="true" disabled="disabled">Upcoming Or Retrospective</option>
+        <option selected disabled="disabled">Upcoming Or Retrospective</option>
         <option value="Upcoming">Upcoming</option>
         <option value="Retrospective">Retrospective</option>
       </select>

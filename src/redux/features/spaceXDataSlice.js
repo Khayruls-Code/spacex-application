@@ -11,14 +11,20 @@ export const getData = createAsyncThunk(
 
 const todayDate = new Date()
 //geting last week start anb end date
-const startDayOfPrevWeek = moment(todayDate).subtract(1, 'week').startOf('week').format('LLLL')
-const lastDayOfPrevWeek = moment(todayDate).subtract(1, 'week').endOf('week').format('LLLL')
+const startDayOfPrevWeek = moment(todayDate).subtract(1,
+'week').startOf('week').format('LLLL')
+const lastDayOfPrevWeek = moment(todayDate).subtract(1,
+'week').endOf('week').format('LLLL')
 //getting last month start and end date
-const startDayOfPrevMonth = moment(todayDate).subtract(1, 'month').startOf('month').format('LLLL')
-const lastDayOfPrevMonth = moment(todayDate).subtract(1, 'month').endOf('month').format('LLLL')
+const startDayOfPrevMonth = moment(todayDate).subtract(1,
+'month').startOf('month').format('LLLL')
+const lastDayOfPrevMonth = moment(todayDate).subtract(1,
+'month').endOf('month').format('LLLL')
 //getting last year start and end date
-const startDayOfPrevYear = moment(todayDate).subtract(1, 'year').startOf('year').format('LLLL')
-const lastDayOfPrevYear = moment(todayDate).subtract(1, 'year').endOf('year').format('LLLL')
+const startDayOfPrevYear = moment(todayDate).subtract(1,
+'year').startOf('year').format('LLLL')
+const lastDayOfPrevYear = moment(todayDate).subtract(1,
+'year').endOf('year').format('LLLL')
 
 export const spaceDataSlice = createSlice({
   name: 'spaceXData',
@@ -48,11 +54,14 @@ export const spaceDataSlice = createSlice({
       state.searchText = payload
       let newData;
       if (payload === 'Last Week') {
-        newData = state?.list?.filter(item => moment(item?.launch_date_utc).isBetween(startDayOfPrevWeek, lastDayOfPrevWeek))
+        newData = state?.list?.filter(item => moment(item?.launch_date_utc).isBetween(startDayOfPrevWeek,
+lastDayOfPrevWeek))
       } else if (payload === 'Last Month') {
-        newData = state?.list?.filter(item => moment(item?.launch_date_utc).isBetween(startDayOfPrevMonth, lastDayOfPrevMonth))
+        newData = state?.list?.filter(item => moment(item?.launch_date_utc).isBetween(startDayOfPrevMonth,
+lastDayOfPrevMonth))
       } else if (payload === 'Last Year') {
-        newData = state?.list?.filter(item => moment(item?.launch_date_utc).isBetween(startDayOfPrevYear, lastDayOfPrevYear))
+        newData = state?.list?.filter(item => moment(item?.launch_date_utc).isBetween(startDayOfPrevYear,
+lastDayOfPrevYear))
       } else {
         newData = state.list
       }
