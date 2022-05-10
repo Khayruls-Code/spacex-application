@@ -24,9 +24,9 @@ I have used the redux toolkit to manage all states of this project. To use the r
 
 I have used the moment package to filter data by last week, last month, and last year. The moment is a package which helps is parsing, validating, manipulating and displaying date/time in JavaScript in a very easy way.
 
-### `react icon`
+### `react icons`
 
-react icon has been installed to use icons
+react icons has been installed to use icons
 
 ### `Jest`
 
