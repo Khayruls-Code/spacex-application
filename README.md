@@ -34,8 +34,16 @@ I've used Jest to test the application. We need some other packages to work with
 
 ## Deploy Process
 
-I've deployed the app on netlify. The process is very simple. Firstly, to build the app, have to run "npm run build" command. The build will be finished shortly and there will be created a folder named build in the root directory.
+I've deployed the app on netlify. The process is very simple.
 
-Then, We have to log in on netlify. There has a menu named Sites and have to click on this menu. Here a section is written, "Want to deploy a new site without connecting to Git? Drag and drop your site output folder here". To deploy the application we have to drag and drop the build folder here.
+1. Firstly, to build the app, have to run "npm run build" command. The build will be finished shortly and there will be created a folder named build in the root directory.
+
+2. Then, We have to log in on netlify.
+
+3. There has a menu named Sites and have to click on this menu. 
+
+4. Here a section is written, "Want to deploy a new site without connecting to Git? Drag and drop your site output folder here". 
+
+5. To deploy the application we have to drag and drop the build folder here.
 
 That's how I deployed the project on netlify.
