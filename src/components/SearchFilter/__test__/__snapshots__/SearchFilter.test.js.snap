@@ -2,7 +2,7 @@
 
 exports[`matchs snapshot 1`] = `
 <div
-  className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mb-4 gap-y-4 gap-x-4 md:gap-x-8"
+  className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mb-6 gap-y-4 gap-x-4 md:gap-x-8"
   data-testid="searchFilterId"
 >
   <input
@@ -17,7 +17,7 @@ exports[`matchs snapshot 1`] = `
   >
     <option
       disabled="disabled"
-      selected="true"
+      selected={true}
     >
       Filter By Launch Date
     </option>
@@ -43,7 +43,7 @@ exports[`matchs snapshot 1`] = `
   >
     <option
       disabled="disabled"
-      selected="true"
+      selected={true}
     >
       Filter By Launch Status
     </option>
@@ -64,7 +64,7 @@ exports[`matchs snapshot 1`] = `
   >
     <option
       disabled="disabled"
-      selected="true"
+      selected={true}
     >
       Upcoming Or Retrospective
     </option>

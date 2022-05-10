@@ -20,7 +20,7 @@ exports[`matchs SpaceX snapshot 1`] = `
     >
       <option
         disabled="disabled"
-        selected="true"
+        selected={true}
       >
         Filter By Launch Date
       </option>
@@ -46,7 +46,7 @@ exports[`matchs SpaceX snapshot 1`] = `
     >
       <option
         disabled="disabled"
-        selected="true"
+        selected={true}
       >
         Filter By Launch Status
       </option>
@@ -67,7 +67,7 @@ exports[`matchs SpaceX snapshot 1`] = `
     >
       <option
         disabled="disabled"
-        selected="true"
+        selected={true}
       >
         Upcoming Or Retrospective
       </option>
@@ -86,10 +86,5 @@ exports[`matchs SpaceX snapshot 1`] = `
   <div
     className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
   />
-  <h1
-    className="text-white text-4xl  flex items-center justify-center mt-32"
-  >
-    Data Not Found
-  </h1>
 </div>
 `;
